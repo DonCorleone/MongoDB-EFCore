@@ -24,10 +24,10 @@ It is a quick walkthrough on using .NET Core 2 to build a Web API layer using Mo
  - Then in the console, within the current project folder, run the next two commands:"dotnet restore", and then "dotnet run"
  - The ASP.NET Core WebAPI will run using IIS (default settings: http://localhost:5000)
 
-  500  dotnet add package Microsoft.EntityFrameworkCore --version 2.1.0-preview1-final
-  501  dotnet add package Blueshift.EntityFrameworkCore.MongoDB --version 2.1.0-preview1-t005b26807 --source https://www.myget.org/F/efcore-mongodb/api/v3/index.json
-  502  dotnet add package Microsoft.EntityFrameworkCore --version 2.1.0-preview1-final
-  503  dotnet add package Microsoft.Extensions.Configuration --version 2.1.0-preview1-final
-  504  nuget restore
-  505  dotnet ef migrations add initial
-  506  dotnet add package Microsoft.EntityFrameworkCore.Design
+  500  dotnet add package Microsoft.EntityFrameworkCore --version 2.1.0-preview1-final  
+  501  dotnet add package Blueshift.EntityFrameworkCore.MongoDB --version 2.1.0-preview1-t005b26807 --source https://www.myget.org/F/efcore-mongodb/api/v3/index.json  
+  502  dotnet add package Microsoft.EntityFrameworkCore --version 2.1.0-preview1-final  
+  503  dotnet add package Microsoft.Extensions.Configuration --version 2.1.0-preview1-final  
+  504  nuget restore  
+  505  dotnet ef migrations add initial  
+  506  dotnet add package Microsoft.EntityFrameworkCore.Design  
