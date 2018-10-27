@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using NotebookAppApi.Interfaces;
 using NotebookAppApi.Data;
 using NotebookAppApi.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace NotebookAppApi
 {
@@ -37,6 +38,8 @@ namespace NotebookAppApi
                 options.Database = Configuration.GetSection("MongoConnection:Database").Value;
             });
 
+            services.AddDbContext<ZooDbContext>(options => options.UseMongoDb(Configuration.GetSection("MongoConnection:ConnectionString").Value));
+        
             services.AddTransient<INoteRepository, NoteRepository>();
         }
 
